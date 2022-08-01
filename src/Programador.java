@@ -109,11 +109,7 @@ public class Programador extends Empleado {
 	@Override
 	public String toString() {
 		return "Programador [lineasDeCodigoPorHora=" + lineasDeCodigoPorHora + ", lenguajeDominante="
-				+ lenguajeDominante + ", toString()=" + super.toString() + ", getClass()=" + getClass()
-				+ ", hashCode()=" + hashCode() + "]";
+				+ lenguajeDominante + ", toString()=" + super.toString() + "]";
 	}
 
-
-	
-	
 }

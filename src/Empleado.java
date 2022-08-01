@@ -69,28 +69,28 @@ public class Empleado {
 	public void setCalificacion(String calificacion) {
 		this.calificacion = calificacion;
 	}
-
-
 	
 	@Override
 	public String toString() {
 		return "Empleado [nombre=" + nombre + ", cedula=" + cedula + ", edad=" + edad + ", estadoCivil=" + estadoCivil
-				+ ", salario=" + salario + ", calificacion=" + calificacion + ", getCalificacion()=" + getCalificacion()
-				+ "]";
+				+ ", salario=" + salario + ", calificacion=" + calificacion + "]";
 	}
 
 	public void asignarCalificacion() {
 		
 		if(this.edad >= 18 || this.edad <= 21 ) {
 			this.calificacion = "Principiante";
+			this.setCalificacion(this.calificacion);
 		}
 		else
 			if(this.edad >= 22 || this.edad <= 35 ) {
 				this.calificacion = "Intermedio";
+				this.setCalificacion(this.calificacion);
 			}
 			else
 				if(this.edad > 35 || this.edad <= 70 ) {
 					this.calificacion = "Senior";
+					this.setCalificacion(this.calificacion);
 				}
 	}
 }
